@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+        <style>
+            table {
+                border-collapse: collapse;
+            }
+            td, th{
+                border: 1px solid gray;
+                text-align: center;
+                padding: 7px;
+            }
+            th{
+                background: lightgray;
+            }
+        </style>
+
+<body>
+
+    <!-- table>tr*3>td*4 -->
+    <table>
+        <tr>
+            <!-- <th colspan="5">*인적사항</th> -->
+            <th colspan="5">*인적사항</th>
+
+        </tr>
+        
+        <tr>
+            <th>이름</th>
+            <th>나이</th>
+            <th>주소</th>
+            <th>성별</th>
+            <th>특이사항</th> <!-- 셀병합 -->
+        </tr>
+        
+        <tr>
+            <td>홍길동</td>
+            <td>30세</td>
+            <td>서울시</td>
+            <td>남성</td>
+            <!-- <td>x</td> --><!-- 에서 rowspan 으로 위아래 길이 조절 -->
+            <td rowspan="3">x</td> <!-- 셀병합 -->
+        </tr>
+
+        <tr>
+            <td>서현진</td>
+            <td>34세</td>
+            <td>서울시</td>
+            <td>여성</td>
+        </tr>
+        <tr>
+            <td>정상수</td>
+            <td>50세</td>
+            <td>부산</td>
+            <td>남성</td>
+        
+        </tr>
+<!-- table>tr*3>td*4 -->
+   
+<!--  -->
+
+    </table>
+
+
+
+</body>
+</html>

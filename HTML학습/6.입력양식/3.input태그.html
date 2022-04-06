@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#">
+<!--value = 지워지는 텍스트 넣어두기 -->
+ <!-- disabled = 쓰지마라 , 막아두기 -->
+<!--  placeholder = 희미하게 써둠 -->
+        # 이름 : <input type="text" value="홍길동" disabled > <br>
+        # 이름 : <input type="text" placeholder="이름을 입력하세요" > <br> 
+        # 비밀번호 :  <input type="password" > <br> <!--password = 자동으로 가려짐 -->
+        # 이메일 : <input type="email" >  <br>
+        <!-- 이메일 형태인지 확인하는 기능  자동내포 -->
+        
+        # 취미 : 
+        <input type="checkbox"> 게임
+        <input type="checkbox"> 축구
+        <input type="checkbox" disabled> 공연관람 <br> 
+<!-- disabled 체크 못하게 막아둠  -->
+        # 메일 수신 여부 
+        <input type="radio" name="mail-verify" checked> 예 <!-- checked 미리선택해놓음 -->
+        <input type="radio" name="mail-verify">아니오  
+        <input type="radio" name="mail-verify"> 네니오  <br> 
+    
+<!--  name="mail-verify" 둘다 넣어야 둘중 하나가 선택됨  3개도 가능 -->
+        # 파일 업로드 :
+        <input type="file"> <br> 
+        <input type="file" multiple> <br> <!--multiple : 여러개 올릴수있다.  -->
+
+        #범위가 있는 
+        
+        <input type="range" min="0" max="5" value="3">  <br> 
+        <!--min="0" = 0부터  -->
+        <!--  max="5"  = 5까지-->
+        <!--value="3" = 3에서 시작해라~ -->
+
+        # 주문수량 
+        <input type="number" value="1" min="0" max="5"> <br> 
+
+        # 히든 !! 
+        <input type="hidden" name="abc" value="메롱">
+        <!-- 사용자 몰래 서버로 전송할 데이터 -->
+        
+        # 버튼 
+        <button tpye="butten">그냥 버튼</button>
+        <button tpye="reset">초기화 버튼</button>
+        <button tpye="submit">전송 버튼</button>
+
+
+
+    </form>
+
+<!--  -->
+
+</body>
+</html>
