@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 300px; /*w300*/ 
+             height: 300px; /*h300*/  
+            background: orange; /*bg 탭 + 오랜지*/ 
+            margin: 100px; /*ma100*/ 
+        }
+    </style>
+</head>
+<body>
+    <!-- .box -->
+    <div class="box"></div>
+    <script>
+        
+        const $box = document.querySelector('.box')
+        $box.onclick = e => {
+            alert('박스 줄이기!')
+            alert('박스 줄이기!') 
+            $box.style.background = 'red';
+            $box.style.width = "150px";
+            $box.style.height = '150px'
+                }
+
+
+    </script>
+
+
+
+
+<!--  -->
+</body>
+</html>
