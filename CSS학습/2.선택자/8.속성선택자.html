@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>속성선택자</title>
+
+    <style>
+        input[type=password]{
+            color: red;
+            width: 100px;
+        } 
+        [disabled] {
+            /* 투명도 70% */
+            opacity: 0.7;
+            font-size: 0.8em;
+        }
+        /* ^ = 시작 , $ =  끝 */
+
+        button[class^='btn']{
+            /* 모서리를 둥글게 */
+            border-radius: 20px;
+        }
+        button[class$='s']{
+            background: blue;
+        }
+
+
+
+
+    </style>
+</head>
+
+
+<body>
+    <input type="text" value="hello">
+    <input type="password" value="1234">
+    <input type="text" value="작성불가" disabled>
+
+    <select>
+        <option>감자</option>
+        <option disabled>쿠쿠루삥뽕</option>
+        <option>버섯</option>
+    </select>
+    
+    <br>
+    <br>
+
+    <button class="norm">nomal</button>
+    <button class="btn-success">success</button>
+    <button class="btn-danger">Danger</button>
+    <button class="btn-dangers">gogogogo</button>
+
+
+    
+</body>
+</html>

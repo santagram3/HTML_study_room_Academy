@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>일반형제선택자</title>
+</head>
+    <style>
+        /* 형이 orang 인 과일 ~ */
+    .orang ~ li{
+        background: red;
+    }
+    /* 바로위에 형이 오랑인 과일 만 ~ */
+    .orang + li{
+        background: blue;
+    }
+
+    </style>
+<body>
+
+    <ul>
+        
+        <li>사과</li>
+        <li>딸기</li>
+        <li class="orang">오렌지</li>
+        <li>자몽</li>
+        <li>포도</li>
+    </ul>
+
+
+
+</body>
+</html>

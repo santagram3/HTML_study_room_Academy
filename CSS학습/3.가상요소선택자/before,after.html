@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>before,after</title>
+
+
+<style>
+        li::before{
+            content: '번호 : ';
+        }
+        li::after{
+            /* 주의1 : before , after는 content가 
+            필요 없어도 필수로 넣어야 함. */
+            /* 주의2 : 도형을 나타내려면 display속성이 필수! */
+            content: '';
+            width: 20px;
+            height: 20px;
+            background: red;
+            display: inline-block;
+            margin-left: 5px;
+            /* 원을 만드려면 border-radius속성을 50%fh tjfwjd */
+            border-radius: 50%;
+        
+        }
+
+
+</style>
+
+</head>
+<body>
+    <!-- ul>li{$}*10 -->
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+    </ul> 
+
+    
+</body>
+</html>

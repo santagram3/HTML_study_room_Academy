@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2.nth-child</title>
+
+<style>
+    /* 과일 후손중 li 중에 첫번째 */
+    #fruits li:first-child{
+        color: red;
+    }
+    /* 과일 후손중에 li 중에 막내 */
+    #fruits li:last-child{
+        color: yellowgreen;
+    }
+    #fruits li:nth-child(5){
+        color: blue
+    }
+    #fruits li:nth-child(5):hover{
+        font-size: 50px;
+    }
+    /* 홀수번째 li만 선택  */
+    #fruits li:nth-child(2n+1){
+        background: aqua;
+    }
+    /* 짝수 = 2n ,  */
+    #fruits li:nth-child(2n){
+        background: red;
+    }
+/* 홀수 = 2n+1 ,odd */
+/* 짝수 = 2n ,  */
+/* 1.4.7번째 li만 선택 */
+ /* 딸기 , 망고 ,라임 만 기울이고 싶을때 */
+ #fruits li:nth-child(3n+1){
+     font-style: italic;
+ }
+ /* li중이 class가 orang인 요소 빼고 전부 */
+ #fruits li:not(.orang) {
+     font-size: 1.5px;
+ }
+
+
+</style>
+
+</head>
+
+<body>
+    <!-- ul#fruits>li*7 -->
+    <ul id="fruits">
+        <li>딸기</li>
+        <li>사과</li>
+        <li class="orang">오렌지</li>
+        <li>망고</li>
+        <li>바나나</li>
+        <li>자몽</li>
+        <li>라임</li>
+    </ul>
+
+    
+</body>
+</html>

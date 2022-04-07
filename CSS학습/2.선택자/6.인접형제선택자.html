@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인접형제선택자</title>
+</head>
+    <style>
+        /* 오랑에 동생 */
+        .orang + li{
+            color: orangered;
+        }
+        /* li 동생 오랑 , 
+        어뤠인지는 위에 형이 없으니까 해당 안됨*/
+        li + .orang{
+            color: yellow;
+        }
+        /* 어뤠인지는 형이 없으니까 안커짐 */
+        li + li {
+            font-size: 24px;
+        } 
+        /* -는 없다..ㅠ */
+    </style>
+<body>
+
+    <ul>
+        <li class="orang">어뤠인지</li>
+        <li>사과</li>
+        <li>딸기</li>
+        <li class="orang">오렌지</li>
+        <li>자몽</li>
+        <li>포도</li>
+    </ul>
+
+
+
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>일치선택자</title>
+
+    <style>
+        /* li 이면서 orang 인거 */
+        li.orang{
+            color: orange;
+        }
+        span.orang{
+            background-color: orange;
+        }
+        #apple {
+            background: red;
+        }
+        /* 다 있어야됨 */
+        h1.yellow.low.primary{
+            background: yellow;
+        }
+        /* 위에꺼 없으면 이것도 가능  */
+        h1.low.primary{
+            background: darkblue;
+        }
+        aside.banner.image#roll{
+            border: 1px solid red;
+            width: 50px;
+            height: 100px;
+        }
+    </style>
+
+
+</head>
+<body>
+    <!-- li 3번째에 토마토 색을 바꾸고싶다 -->
+    <!-- div>(ul>li*3)+div+p+span -->
+
+    <div class="shadow reverse">
+        <ul>
+            <li id="apple">사과</li>
+            <li class="reverse">딸기</li>
+            <li class="orang reverse" id="big">토마토</li>
+        </ul>
+
+        <div>당근</div>
+        <p class="reverse">토마토</p>
+        <span class="orang">오렌지</span>
+    </div>
+
+
+    <!-- h1.reverse#small 응용-->
+    <h1 class="reverse" id="small">파인애플</h1>
+    <!-- h2.shadow.reverse 응용-->
+    <h2 class="shadow reverse">수박사과</h2>
+
+    <h1 id="change" class="yellow low primary">수박파인애플 </h1>
+
+    <aside id="roll" class="banner image">
+        
+    </aside>
+
+
+
+
+</body>
+</html>

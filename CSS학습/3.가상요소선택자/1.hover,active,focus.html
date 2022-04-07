@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hover,active,focus</title>
+
+    <style>
+        /* hover: 요소에 마우스를 올렸을때  */
+        a:hover{
+            font-size: 500px;
+            font-weight: bold;
+            color: red;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            background: orange;
+            /* 애니메이션 효과 */
+            transition: 3s;
+        }
+        .box:hover{
+            width: 300px;
+            height: 300px;
+            background: blueviolet;
+        }
+        /* active: 요소에 마우스를 누르고 있을때 */
+        .box:active {
+            height: 50px;
+            background: yellow;
+        }
+        #common {
+            width: 100px;
+            border: 1px solid gray;
+            outline: none;
+            padding: 5px 10px;
+            margin-top: 20px;
+            transition: 5s;
+
+        }
+        /* focus: 특정요소에 포커싱(탭 ,클릭)했을때 */
+        #common:focus {
+            border-color: red;
+            width: 500px;
+
+        }
+
+
+
+    </style>
+
+
+</head>
+
+<body>
+    <a href="#">Hello!!!</a>
+    <div class="box"></div>
+
+    <input type="text" id="common">
+    
+
+</body>
+</html>

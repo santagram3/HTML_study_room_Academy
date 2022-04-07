@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자식선택자</title>
+
+    <style>
+        /* 맨 뒤 선택자가 타겟, 앞에는 조건  */
+        /* Ul 이라는 태그안에 .orang 이 붙은걸 오랜지로 바꿔라  */
+        /* 부모 자식만 가능 ,2단계 자식은 안됨 */
+        ul> .orang {
+            color: orange;
+        }
+        /* div 안에 오랑 있는애가 타겟 */
+        div> .orang{
+            color: blue;
+        }
+        /* 토마토 */
+        .shadow > p {
+            font-style: italic; 
+        }
+        /* 이것도 토마토  */
+        div.shadow > p {
+            color: blue;
+        }
+        /* 메롱메롱 */
+        div> em {
+            color: green;
+        }
+
+
+    </style>
+
+
+</head>
+<body>
+    <em>안녕앙영 </em>
+  
+    <div class="shadow reverse">
+        <em>메롱메롱</em>
+        <ul>
+            <li id="apple">사과</li>
+            <li class="reverse">딸기</li>
+            <li class="orang reverse" id="big">토마토</li>
+        </ul>
+
+        <div>당근</div>
+
+        <p class="reverse">토마토<em>마토</em></p>
+
+        <span class="orang">오렌지</span>
+
+    </div>
+
+
+    <!-- h1.reverse#small 응용-->
+    <h1 class="reverse" id="small">파인애플</h1>
+    <!-- h2.shadow.reverse 응용-->
+    <h2 class="shadow reverse">수박사과</h2>
+
+
+
+
+
+</body>
+</html>
