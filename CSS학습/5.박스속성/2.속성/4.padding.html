@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>패딩</title>
+
+    <style>
+        .container {
+            width: 500px;
+            height: 500px;
+            background: orange;
+            margin-left: 100px;
+             /* 패딩을 주니까 ...밀려난다 */
+            /* 패딩속성은 좌우 지정시 가로길이가 그만큼 늘어나고
+            상하지정시 세로길이가 늘어남. */
+            margin-top: 50px;
+            padding-top: 50px;
+
+        }
+        .box   {
+            width: 250px;
+            height: 250px;
+            background: tomato;
+            color: white;
+            font-size: 2em;
+            margin: 20px;
+            padding-top: 30px;
+            padding-left: 20px;
+            /* 패딩 사용으로 길이가 증가하는 것을 방지 */
+            box-sizing: border-box;
+
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">안녕하세4ㄱ61542ㄱ6142여</div>
+    </div>
+
+    
+</body>
+</html>

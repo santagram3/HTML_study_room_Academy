@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>우선순위</title>
+
+    <style>
+        div {
+            /* color: blue !important ; */
+        }
+
+        div {
+            color: blue;
+        }
+
+        #c-y {
+            color: yellow;
+        }
+
+        .c-g {
+            color: green;
+        }
+
+        body {
+            color: aqua;
+        }
+
+        div {
+            color: red;
+        }
+
+        /* 둘중 뭐가될까 ?  */
+        /* 가장 높은놈이 선택된다 */
+        /* 1점 */
+        h1 {
+            color: lightcoral;
+        }
+
+        /* 10 + 1 11점 */
+        .bbb h1 {
+            color: orangered;
+        }
+
+        /* 100 + 1 101점  */
+        #aaa h1 {
+            color: gray;
+        }
+
+        /* 100 +1+10+1 112점 */
+        #aaa div.bbb h1 {
+            color: greenyellow;
+        }
+
+        /* 100 +10 +1 111점 */
+        #aaa .bbb h1 {
+            color: tomato;
+        }
+
+        /* 1 +10 +1 12점 */
+        div.bbb>h1 {
+            color: violet;
+        }
+
+        /*  */
+        /* 가상 클래스 hover ,activ ,:first-child 는 10점*/
+        /*  ::before , ::after 가상요소 = 태그선택자 = 1점*/
+        /* :not() =0점 */
+
+        /* 
+            .list li.item {} (10 + 1 + 10) =21
+            #submit span {} (100 +1 )= 101점
+            hi {} 1점
+            .list li:hover {} (10 + 1 +10 ) = 21
+            .box::before{} (10 + 1 ) = 11
+            header .menu li:nth-child(2){} (1 +10 +1+10) =22점
+            :not(.box){} (0+10) = 10
+            :not(span){} 0+1=1 
+            
+
+            
+            */
+    </style>
+    <!--  -->
+</head>
+
+<body>
+    <div id="c-y" class="c-g" style="color: orange;">안녕하세요 </div>
+    <!-- 인라인이 제일 높다  -->
+    <!--오렌지색  -->
+    <div id="c-y" class="c-g">안녕하세요2</div>
+    <!-- 아이디가 우선순위가 제일 높다 -->
+    <div class="c-g">안녕하세요3</div>
+    <!-- 클래스가 우선순위가 제일 높다 -->
+    <div>안녕하세요4</div>
+    <!-- 중복은 마지막에 쓴 스타일이 적용된다 -->
+    <section>안녕하세요5</section>
+    <!-- 바디의 상속개념으로  아쿠아색이 나온다 -->
+    <!-- 우선순위 원칙  -->
+    <!-- !important >인라인 > 아이디 > 클래스 > 태그 > 전체(상속) >  -->
+    <hr>
+
+    <!-- #aaa>.bbb>h1{안녕하세요6} -->
+    <div id="aaa">
+        <div class="bbb">
+            <h1>안녕하세요6</h1>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

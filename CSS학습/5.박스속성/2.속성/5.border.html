@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>보더콜리</title>
+
+    <style>
+        .box {
+            width: 150px;
+            height: 150px;
+            margin-top: 10px;
+            background: gray;
+            box-sizing: border-box;
+
+        }
+
+        .box1 {
+            background: tomato;
+            /* 선의 굵기 */
+            border-width: 10px;
+            /* 선의 종류 */
+            border-style: solid;
+            /* 선의 색 */
+            border-color: orange;
+
+        }
+
+        .box2 {
+            background: aqua;
+            border-width: 10px;
+            border-style: outset;
+            border-color: brown;
+        }
+
+        .box3 {
+            border-width: 16px;
+            border-right: 5px solid coral;
+            border-top: 15px double cadetblue;
+            border-bottom: 20px outset teal;
+            border-left: 11px inset lightcoral;
+            border-radius: 5px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- .box.box$*3 -->
+    <!-- $순차적인 번호 -->
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+
+
+
+
+</body>
+
+</html>
