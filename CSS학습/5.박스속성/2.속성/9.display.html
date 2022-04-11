@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+
+    <style>
+        #hello {
+            background: red;
+            font-size: 2em;
+            color: yellow;
+            padding: 20px;
+            display: block;
+
+        }
+        a {
+            background: yellowgreen;
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+        }
+        .box input{
+            width: 100px;  
+            height: 50px;
+        }
+        .box input:nth-child(3){
+            /* 없어짐 -아예없애버림*/
+            /* display: none; */
+            /* 투명도 설정 : 0% -0에 가까울수록 투명 , 최대값은 1 */
+            /* 있는데 안보임 */
+            opacity: 0.1;
+        }
+        
+
+
+    </style>
+
+</head>
+
+
+<body>
+
+    <span id="hello">
+        안녕하세요!
+    </span>
+        <a href="#">회원가입</a>
+        <a href="#">로그인</a>
+    <div class="box">
+        <!-- 인풋은 기본값이 inline-block 이다-->
+        <input type="text" value="1">
+        <input type="text" value="2">
+        <input type="text" value="3">
+        <input type="text" value="4">
+        <input type="text" value="5">
+    </div>
+
+    <!-- <script>
+            이거 잘 안됨 ;; 
+        hello.onclic = e => {
+            hello.style.dispay = 'none';
+        }
+    </script> -->
+      <script>
+        hello.onclick = e => {
+            hello.style.dispay = 'none';
+        }
+    </script>
+
+</body>
+
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bg</title>
+
+
+    <style>
+        .box {
+            width: 550px;
+            height: 350px;
+
+            border: 4px dashed gray;
+            background-color: yellow;
+            background-image: url('../img/sky.jpg');
+            /* 150짜리가 반복됨 */
+            background-size: 150px 150px;
+            /* 반복안해  기본값이 반복임 repeat*/
+            background-repeat: no-repeat;
+            background-position: 100% 30%;
+            /* 위치먼저 자오고 ,크기를 나중에 써야된다 , 
+            슬래시로 나눠줘야 한다. */
+            /* 위에거 한번에 써도 상관없다 . */
+            background: yellow no-repeat 
+            url('../img/sky.jpg') 90% 40% / 200px 220px ;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box"> </div>
+
+</body>
+
+</html>
