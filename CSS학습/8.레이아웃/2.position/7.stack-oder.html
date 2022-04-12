@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7.stack-oder</title>
+
+    <style>
+        .container {
+            width: 80%;
+            margin: 50px auto 0;
+
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background: tomato;
+            border: 4px dashed red;
+            border-radius: 15px;
+            font-style: 30px;
+            text-align: center;
+            line-height: 100px;
+            float: left;
+            box-shadow: 2px 2px 20px black;
+            margin-right: -30px;
+        }
+
+        .box:nth-child(even) {
+            margin-top: 30px;
+        }
+
+        /* 나중에 작성한 요소일수록 위에 쌓임 */
+        /* 나중에 작성한 요소 기준은 
+        css가 아니라 html에서 나중에 작성된 요소!! */
+        /* 포지션 속성값이 있을 경우 가장 위에 쌓임 */
+        /*  z-index: 에서 숫자가 높을수록 순서 무시하고 제일 위에 올라간다  */
+        .box1 {
+            z-index: 0;
+        }
+
+        .box2 {
+            z-index: 1;
+        }
+
+        .box3 {
+            z-index: 0;
+        }
+
+        .box4 {
+            z-index: 0;
+        }
+
+        .box5 {
+            z-index: 0;
+        }
+    </style>
+
+</head>
+
+
+<body>
+
+    <!-- .container>.box.box${$}*5 -->
+
+    <div class="container">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+        <div class="box box4">4</div>
+        <div class="box box5">5</div>
+    </div>
+
+
+</body>
+
+</html>

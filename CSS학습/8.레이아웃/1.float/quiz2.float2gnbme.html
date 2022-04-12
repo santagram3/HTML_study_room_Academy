@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>집가서 꼭해야할것 </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <style>
+     
+        .clearfix1::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .clearfix::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .gnb {
+            
+            float: left;
+            width: 55%;
+        }
+        .tnb {
+           
+            float: right;
+            width: 35%;
+        }
+        ul li {
+            float: left;
+           
+            box-sizing: border-box;
+            text-align: center;
+            padding: 10px;
+        }
+        .gnb li {  width: 18%;
+            margin-right: 2%;
+
+        }
+        .tnb li {
+            width: 31%;
+            margin-right: 2%;
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .gnb a:hover {
+            text-decoration: underline;
+            text-decoration-color: red;
+            color: orange;
+            
+        }
+
+        .tnb a:hover {
+            text-decoration: underline;
+            text-decoration-color: red;
+            color: orange;
+        }
+
+        /*  ul을 수평 배치 , 영역을 확인  .*/
+    </style>
+
+
+</head>
+
+<body>
+    
+    <!-- nav>(ul.gnb>li*5>a)+(ul.tnb>li*3>a) -->
+
+    <nav class="clearfix1">
+        <ul class="gnb clearfix2">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">BOARD</a></li>
+            <li><a href="#">LOGIN</a></li>
+            <li><a href="#">JOIN</a></li>
+        </ul>
+        <ul class="tnb clearfix2">
+            <li><a href="#">검색</a></li>
+            <li><a href="#">CONTACT</a></li>
+            <li><a href="#">FAQ</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- 내가 태그 안붙인거 -->
+    <!-- <nav>
+        <ul>
+            <li><a href=""></a></li>
+            <li><a href=""></a>about</li>
+            <li><a href=""></a>board</li>
+            <li><a href=""></a>join</li>
+            <li><a href=""></a></li>
+        </ul>
+        <ul>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+        </ul>
+    </nav> -->
+    <!--  내가 태그를 안붙인거  -->
+
+</body>
+
+</html>

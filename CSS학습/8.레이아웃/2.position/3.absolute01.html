@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+
+    <style>
+        .container {
+            margin: 100px;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background: orange;
+            border: 4px dashed red;
+          
+            text-align: center;
+            
+            line-height: 100px;
+
+        }
+        .box:nth-child(2){
+            position: relative;
+            bottom: 50px;
+          }
+          /* absolute 와 relative 의 차이점 
+          relative 원래 있던자리에 서 이동 
+          absolute 전체 창 기준에서 이동 */
+          /* absolute 는 3 번이 2번자리를 침해하고 
+          relative 3번 이고정되어있다  */
+    </style>
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </div>
+
+</body>
+
+</html>

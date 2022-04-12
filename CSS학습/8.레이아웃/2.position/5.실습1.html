@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+
+    <style>
+        section {
+            width: 200px;
+
+            padding: 100px;
+            font-size: 16px;
+            background: rgb(247, 178, 178);
+            border: 3px dashed orange;
+            /*  */
+        }
+
+        h1 {
+            /* 동물병원 */
+            font-size: 1.5em;
+            color: green;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            padding-top: 10px;
+            font-weight: bold;
+        }
+
+        ul {
+            /* 밥먹이는 */
+            padding: 20px 0;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            font-size: 1.4em;
+
+        }
+
+        a {
+            text-decoration: none;
+
+        }
+
+        section .more {
+            /* 더보기 */
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 1.3em;
+            text-decoration: underline;
+            padding-top: 10px;
+        }
+
+
+
+        .center-box {
+            /* 외워라 !!!!!!!!!!!!!!! */
+            /* 박스 x,y 축 중앙정렬 */
+            /* x중앙정렬 = margin auto */
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class=" center-box ">
+        <h1>동물병원 24시</h1>
+        <ul class="content">
+            <li><a href="#">밥 먹이는 시간 지킬 것</a></li>
+            <li><a href="#">길고양이 주사 맞히기</a></li>
+            <li><a href="#">눈 아픈 동물 목에 깔때기 씌우기</a></li>
+            <li><a href="#">매일 목욕 시킬 것</a></li>
+            <li><a href="#">이름없는 애들 이름 짓지 말기</a></li>
+        </ul>
+        <div class="more">
+            <a href="#">더보기</a>
+        </div>
+    </section>
+
+</body>
+
+</html>

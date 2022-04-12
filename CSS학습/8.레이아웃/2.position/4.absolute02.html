@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4.absolute02</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+
+    <style>
+        .root {
+            width: 600px;
+            height: 500px;
+            border: 4px dashed orange;
+            padding: 100px;
+            font-size: 30px;
+            /* position: relative; */
+
+
+        }
+        .parent {
+            width: 400px;
+            height: 300px;
+            border: 4px dashed blue;
+            padding: 50px;
+            /* position: relative; */
+
+        }
+        .child {
+            width: 120px;
+            height: 80px;
+            border: 4px dashed red;
+            background: tomato;
+            border-radius: 10px;
+            text-align: center;
+            line-height: 80px;
+            
+        }
+        .abs
+        {
+            /* 얘의 움직임을 제한시키려면 
+            상위 엄마에게 position: static 이걸 제외한 다른걸
+            먹이면 제한이 걸린다  */
+            /* 부모 할머니 둘다 포지션이 걸려있다면 
+            가장 가까운 부모에게 걸린다  */
+            position: absolute;
+            top: 50px;
+            right: 30px;
+        }
+        .center-box {
+            /* 외워라 !!!!!!!!!!!!!!! */
+            /* 박스 x,y 축 중앙정렬 */
+            /* x중앙정렬 = margin auto */
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform : translate(-50% ,-50%) ;
+        
+        
+        } 
+
+
+
+    </style>
+
+
+</head>
+<body>
+    <div class="root">
+        <div class="parent">
+            <div class="child center-box ">1</div>
+            <div class="child abs">2</div>
+            <div class="child">3</div>
+        </div>
+    </div> 
+</body>
+</html>
