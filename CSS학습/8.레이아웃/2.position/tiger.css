@@ -1,0 +1,103 @@
+/* 일반적인거  */
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+body {
+    font-size: 13px;
+    line-height: 1.5;
+    font-family: '굴림', Gulim, serif;
+    color: #333;
+    background: #666;
+}
+
+#wrapper {
+    background: orange;
+    width: 50%;
+    margin: 0 auto;
+    /* 전체 수평맞추기  */
+}
+
+/* header style */
+header {
+    background: #123456;
+}
+
+header h1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #cc0;
+    text-align: center;
+    font-family: '휴먼모음T', gungseo, cursive;
+}
+
+header h1 strong {
+    font-size: 3em;
+    color: white;
+}
+
+header h1 span {
+    font-size: 1.5em;
+}
+
+header h1 em {
+    font-size: 2em;
+    color: #ccc;
+}
+
+/* container */
+.container {
+    background: #ccc;
+}
+
+.container ul {
+    width: 20%;
+    float: left;
+    padding: 20px;
+    box-sizing: border-box;
+    /* 패딩커버 */
+}
+
+.container ul li {
+    padding: 5px 0;
+}
+
+.container ul li a {
+    color: blue;
+}
+
+.container ul li a:hover {}
+
+.container .content {
+    width: 80%;
+    float: right;
+}
+
+.container .content h2 {
+    background: #800;
+    color: #cc0;
+    font-size: 25px;
+    font-weight: 700;
+    font-family: '궁서', Gungseo, cursive;
+    padding: 5px 20px;
+}
+
+.container .content p {
+    padding: 20px;
+    text-align: justify;
+}
+
+footer {
+    background: #aaa;
+    padding: 10px 20px;
+}
+
+footer address {
+    color: #000;
+}
+
+
+/*  */

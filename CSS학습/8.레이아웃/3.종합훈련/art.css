@@ -1,0 +1,210 @@
+
+/* 링크 걸었는데 이거 스타일에 포함된건지 ? */
+@import url('common.css');
+
+/* common style */
+
+a {
+    text-decoration: none;
+   color: inherit; 
+}
+
+
+body {
+    font-size: 13px;
+    font-family: 'NGothic', Arial , san-serif;
+    background: #aaa;
+}
+#wrapper {
+    width: 60%;
+    background: #fff;
+    margin: 0 auto;   
+}
+header
+    {
+        background: #fa0;
+        color: #fff;
+        text-align: center;
+       
+    }
+    header h1 {
+        font-weight: bold;
+        font-size: 8em;
+        padding: 10px;
+    }
+    header h1 span {
+        /* 스팬은 인라인이라 옆으로 붙으니까 
+        디스플레이로 블록으로 설정하면 내려감 */
+        font-size: 20px;
+        display: block;
+        margin-top: 10px;
+
+    }
+    header .stit {
+        background: #ccc;
+        color: black;
+        padding: 5px 0;
+    }
+/* container style */
+
+
+/* > .side-menu */
+
+.container .side-menu {
+    background: tomato;
+    width: 25%;
+    float: left;
+}
+.container .side-menu h3 {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #fff;
+    background: red;
+    padding: 10px;
+}
+.container .side-menu ul {
+    margin-top: 5px;
+}
+.container .side-menu ul li  {
+    padding: 10px;
+}
+.container .side-menu ul li a {
+    font-weight: bold;
+    text-decoration: underline;
+}
+.container .side-menu ul li a:hover {
+    border: 1px dashed #000;
+}
+
+/* > .side-menu 끝 */
+
+
+/* > .main-content */
+
+.container .main-content {
+    background: lightgray ;
+    width: 50%;
+    float: left;
+    color: rgb(42, 42, 255);
+}
+.container .main-content .art-piece {
+    margin-top: 10px;
+    font-size: 1.3em;
+    font-weight: 700;
+    padding: 10px;
+}
+.container .main-content .art-piece .title {
+    color: #ddd;
+    background: #123456;
+    padding: 7px 5px;
+}
+.container .main-content .art-piece .title a {
+    display: block;
+}
+.container .main-content .art-piece .title a:hover {
+    color: yellow;
+}
+.container .main-content .art-piece .arisit {
+    margin: 20px 0;
+}
+.container .main-content .art-piece .detail {
+    font-size: 0.7em;
+    font-weight: normal;
+
+}
+/* > .main-content 끝 */
+
+
+/* > .banner */
+
+.container .banner{
+    
+    width: 25%;
+    float: left;
+    font-weight: 700;
+}
+
+.container .banner h3{
+    font-size: 1.7em;
+    color: #333;
+    padding: 20px 10px;
+}
+.container .banner h3 span,
+.container .banner h3 strong {
+    display: block;
+    margin-bottom: 10px;
+}
+.container .banner h3 span {
+    text-decoration: underline;
+}
+.container .banner h3 .all {
+    color: #999;
+
+}
+.container .banner h3 .love {
+    color: #fa0;
+}
+.container .banner .link {
+   
+    padding-left: 10px;
+}
+.container .banner .link li {
+    margin-bottom: 15px;
+}
+.container .banner .link li a {
+    display: block;
+    text-decoration: underline;
+    margin-bottom: 5px;
+    /* 텍스트 만큼만 가로길이가 정해짐 */
+    width: fit-content;
+
+}
+.container .banner .link li span {
+    font-weight: 400;
+}
+/* > .banner 끝 */ 
+
+/* footer style */
+footer {
+    background: #123456;
+    padding: 10px;
+    font-weight: 700;
+    color: #eee;
+    text-align: center;
+}
+footer a {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

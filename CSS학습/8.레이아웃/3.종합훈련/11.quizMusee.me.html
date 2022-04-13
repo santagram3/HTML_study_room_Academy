@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+
+    <style>
+        .clearfix::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        body {
+            font-size: 19px;
+            line-height: 1.5;
+            font-family: '굴림', Gulim, serif;
+            color: #333;
+            background: #666;
+        }
+        /*전체 */
+        #wrapper {
+            width: 50%;
+            margin: 0 auto;
+            background: white
+            
+        }
+        /* 머리 */
+        header {
+            background: orange;
+        }
+
+        header h1 {
+            font-size: 4.5em;
+            font-weight: bolder;
+            color: white;
+            text-align: center;
+        }
+
+        header h2 {
+            font-size: 0.8em;
+            text-align: center;
+            font-weight: bolder;
+            color: white;
+        }
+
+        header h3 {
+            background: gray;
+            font-size: 0.5em;
+            text-align: center;
+            font-weight: bolder;
+            color: black;
+        }
+        /* 몸통 */
+        #middle {
+            background: white;
+        }
+        .left {
+            width: 24%;
+            float: left;
+            font-weight: bold;
+        }
+        .left h3 {
+            padding-left: 10px;
+            background: red;
+            font-weight: bold;
+            color: white;
+        }
+        .left ul li {
+            margin: 10px;
+        }
+        /* 중앙 */
+        .center {
+            font-weight: bold;
+            width: 48%;
+            float: left;
+            padding: 0 2%;
+            
+        }
+        .center h2{
+            background: rgb(41, 41, 92);
+            margin-bottom: 2px;
+        }
+        .center h2 a {
+            color: white;
+            text-decoration: none;
+            padding: 2px;
+        }
+        .center h3 {
+            margin-bottom: 2px;
+            padding: 5px 0;
+        }
+        .center p {
+            font-size: 0.7em;
+            padding-bottom: 5px;
+        }
+        /* 오른쪽 */
+        .right {
+            width: 24%;
+            float: right;
+            
+        }
+        .right h3 {
+            padding: 5px 0 0 3px;
+            font-weight: bold;
+        }
+        .right h3 strong {
+            text-decoration: underline;
+            color: gray;
+        }
+        .right h3 span{
+            text-decoration: underline;
+            color: yellowgreen;
+        }
+        .jul3 ul li a{
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- 전체크기 -->
+    <div id="wrapper">
+        <!-- 노랑색 대가리 -->
+        <header>
+            <div class="big header">
+                <h1>
+                    Musée d'Orsay
+                </h1>
+                <h2>
+                    Musée d'Orsay Musée d'Orsay
+                    Musée d'Orsay Musée d'Orsay Musée d'Orsay
+                </h2>
+            </div>
+            <h3>
+                Royal Academy of Arts, THE REAL VANGOGH
+                THE ARTIST AND HIS LETTERS
+            </h3>
+        </header>
+        <!-- 왼쪽 -->
+        <div id="middle" class="clearfix">
+            <div class="left">
+                <h3>ARTIST</h3>
+                <ul class="menu">
+                    <li><a href="#">작가의 작품</a></li>
+                    <li><a href="#">작가의 시대</a></li>
+                    <li><a href="#">작가의 일생</a></li>
+                </ul>
+            </div>
+            <!-- 중앙 파란색 -->
+            <div class="center">
+                <h2><a href="#"> 피리부는 소년</a></h2>
+
+                <h3>에두아르마네</h3>
+
+                <p> 1866 캔버스에 유채, 161*97cm, 파리 오르세 Edouard MANET, Le Fifre, H.T, 161*97cm</p>
+
+                <h2><a href="#"> 고흐의 방</a></h2>
+
+                <h3> 빈센트반고흐</h3>
+
+                <p> 1889 캔버스에 유채,57.5*74cm,파리 오르세 Vincent Van GOGH,La Chambre de Van Gogh, H/T, 57.5*74cm </p>
+
+                <h2><a href="#"> 황색 그리스도가 있는 화가의 자화상</a></h2>
+
+                <h3> 폴 고갱</h3>
+
+                <p>1890-1891 캔버스에 유채,38*46cm,파리 오르세 Paul Gauguin Portrait de I'artiste au Paul Gauguin, H/T, 38*46cm</p>
+
+                <h2><a href="#">오페라좌의 관현악단</a></h2>
+
+                <h3> 에드가 드가</h3>
+
+                <p> 1868-1869 캔버스에 유채,32*46cm,파리 오르세 Edgar Degas, L'orchestre de I'Opera H/T, 38*46cm</p>
+
+                <h2><a href="#">만종</a></h2>
+
+                <h3> 장 프랑수아 밀레</h3>
+
+                <p> 1857-1859 캔버스에 유채,55.5*66cm,파리 오르세 Jean-Franqois Millet, L'Angelus H/T, 55.5*66cm</p>
+
+                <h2><a href="#"> 제비꽃장식을 단 베르트모리조</a></h2>
+
+                <h3> 에두아르마네</h3>
+
+                <p>1872 Eduouard Manet Berthe Morisot au bouquet de H/T, 55*38cm</p>
+
+            </div>
+            <!-- 오른족 밑줄 -->
+            <div class="right">
+                <h3>
+                    <strong>전세계인들에게</strong>
+                    <br>
+                    <span>제일사랑받는</span>
+                    <br>
+                    서양미술사의시대</h3>
+                    <br>
+                    <br>
+                <div class="jul3">
+                    <ul>
+                        <li><a href="#">Workshop Go</a></li>
+                        <p>Life drowing workshop</p>
+                        <br>
+                        <li><a href="#">Summer exhibition</a></li>
+                        <p>A-level summer Exhibition Online 2010</p>
+                        <br>
+                        <li><a href="#">RA collection</a></li>
+                        <p>RA collection</p>
+                    </ul>
+
+                </div>
+            </div>
+
+        </div>
+      
+
+
+    </div>
+
+
+</body>
+
+<!-- 헤더((h1+h2)+h3)
+왼쪽(h3)+ul>il>a*3)
+쎈터(((h2>a)+h3+p)*6)
+오른쪽 ((h3>(strong + span))+ul>((li>a)+p)*3 )
+푸터 -->
+<!-- 플루트를 걸으면 부모의 높이가 없어지므로 
+클리어 픽스를 적용해서 높이를 만들어준다  -->
+<!-- 클리어픽스는 항상 class에서 만들어준다  -->
+
+</html>
