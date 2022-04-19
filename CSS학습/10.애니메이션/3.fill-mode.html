@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <style>
+        /*  */
+        .box {
+            width: 100px;
+            height: 100px;
+            margin: 30px;
+            background: tomato;
+            animation: moving 2s 2s;
+            /*none 진행순서  */
+            /* 시작위치 - 0% -100% - 시작위치 */
+            animation-fill-mode: forwards;
+        }
+        @keyframes moving {
+            0% {
+                transform: translate(100px, 100px);
+                background: dodgerblue;
+            }
+            100% {
+                transform: translate(300px, 100px);
+                background: yellowgreen;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+</body>
+
+</html>

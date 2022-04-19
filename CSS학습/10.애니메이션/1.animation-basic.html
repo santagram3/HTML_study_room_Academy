@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+
+<style> 
+.box 
+    {
+        width: 100px;
+        height: 100px;
+        background: greenyellow;
+    }
+    .box:hover {
+        animation-name: grow;
+        animation-duration: 2s;
+        animation-delay: 1s;
+        animation-timing-function: linear;
+        /* 애니메이션 반복 횟수  */
+        animation-iteration-count: infinite;
+        /* 단축속성 */
+        animation: grow 0.1s infinite alternate;
+        /* 앞에가 지속시간 ,뒤에가 딜레이 */
+    }
+
+    /* 애니메이션 효과 만들기 */
+    @keyframes grow {
+        0% {width: 100px;
+            background: greenyellow;
+            }
+        50% {   
+            width: 500px;
+            background: orange;
+        }
+        100% { 
+                width: 300px;
+                background: violet;
+        }
+
+    }
+</style>
+
+</head>
+
+<body>
+    <div class="box"></div>
+    
+
+</body>
+</html>

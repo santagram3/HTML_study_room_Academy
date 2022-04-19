@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background: orange;
+            margin: 50px;
+            font-size: 30px;
+            text-align: center;
+            line-height: 200px;
+            transition: 1s;
+        }
+        .box1:hover {
+            /* 회전효과 */
+            transform: rotate(-18000deg);
+        }
+        .box2:hover {
+            /* 이동효과 */
+            /* position: relative;
+            left: 300px;
+            bottom: 200px; */
+            /* position이동은 영구적 이동*/
+            /* 이동효과를 애니메이션으로 구현할때는 
+            tranform에 translate() */
+            transform: translate(50%,50%);
+            
+        }
+        .box3:hover {
+            /* 확대 축소 */
+            transform: scale(1.5); 
+            /*  1.5배 확대*/
+            transform:scale(0.5);
+            /* 0.5 배 축소 */
+            
+        }
+        .box4:hover {
+            /* 비틀기 효과 */
+            transform: skew(20deg ,60deg);
+            
+        }
+        .box5:hover {
+            transform: rotate(360deg) scale(1.5) translatex(100px);
+        }
+
+
+
+
+
+
+
+
+
+
+
+    /*  */
+    </style>
+    <!--  -->
+</head>
+<body>
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+        <div class="box box4">4</div>
+        <div class="box box5">5</div>
+
+
+
+</body>
+</html>

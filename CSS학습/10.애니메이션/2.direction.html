@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            margin: 30px;
+            background: tomato;
+            animation: rotation 3s linear infinite;
+             animation-direction: alternate;
+
+            /* normal : 0% ~ 100% 움직인다 */
+            /* reverse : 100% ~ 0% 움직인다 */
+            /* alternate : 0% ~ 100% ~ 0% 반복횟수가 적어도
+            2번 이상이 되어야 한다  */
+            /* alternate-reverse : 100% ~ 0% ~ 100% */
+        }
+            @keyframes rotation {
+                0% {
+                    transform: translate(0.0);
+                }
+                25% {
+                    transform: translate(100px ,0);
+                }
+                50% {
+                    transform: translate(100px , 100px);
+                }
+                75% {
+                    transform: translate(0 , 100px);
+                }
+                100% {
+                    transform: translate(0,0);
+                }
+                
+            }
+    </style>
+
+
+</head>
+<body>
+        <div class="box"></div>
+</body>
+</html>

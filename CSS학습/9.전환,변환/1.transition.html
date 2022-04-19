@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+
+<style> 
+        .box {
+            width: 100px;
+            height: 100px;
+            margin: 50px;
+            background: red;    
+            /* property 속성 ,  */
+            /* transition-property: width ,background;
+            transition-duration:  2s; */
+            transition-property: all;
+            transition-duration:  2s;
+            /* transition-delay: 2s; */
+            /* transition-timing-function: ease-in ;
+            transition-timing-function: steps(10) ; */
+             /* 밑에 2개는 서로 같다 
+            transition: all 1s 0s ease;
+            transition: 1s; */
+
+        }
+        .box:hover{
+            width: 500px;
+            background: skyblue;
+        }
+</style>
+
+</head>
+<body>
+    <div class="box">
+
+    </div>
+    
+</body>
+</html>
